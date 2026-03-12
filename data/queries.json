@@ -1,0 +1,930 @@
+{
+  "videos": {
+    "v00": {
+      "filename": "sports_basketball.mp4",
+      "category": "sports",
+      "description": "Basketball players practicing layups and dribbling on an outdoor court"
+    },
+    "v01": {
+      "filename": "sports_soccer.mp4",
+      "category": "sports",
+      "description": "Soccer players kicking a ball on a green grass field"
+    },
+    "v02": {
+      "filename": "sports_swimming.mp4",
+      "category": "sports",
+      "description": "A swimmer doing freestyle strokes in a swimming pool with lane dividers"
+    },
+    "v03": {
+      "filename": "sports_running.mp4",
+      "category": "sports",
+      "description": "Runners sprinting on an athletic track during a race"
+    },
+    "v04": {
+      "filename": "cooking_chopping.mp4",
+      "category": "cooking",
+      "description": "A person chopping vegetables with a knife on a wooden cutting board"
+    },
+    "v05": {
+      "filename": "cooking_stirring.mp4",
+      "category": "cooking",
+      "description": "Stirring food in a pot on a stovetop in a home kitchen"
+    },
+    "v06": {
+      "filename": "cooking_pouring.mp4",
+      "category": "cooking",
+      "description": "Pouring liquid batter into a baking pan for a cake"
+    },
+    "v07": {
+      "filename": "cooking_plating.mp4",
+      "category": "cooking",
+      "description": "A chef carefully arranging food on a plate in a restaurant kitchen"
+    },
+    "v08": {
+      "filename": "nature_waterfall.mp4",
+      "category": "nature",
+      "description": "A waterfall cascading over rocks surrounded by green vegetation"
+    },
+    "v09": {
+      "filename": "nature_ocean.mp4",
+      "category": "nature",
+      "description": "Ocean waves rolling and crashing onto a sandy beach shore"
+    },
+    "v10": {
+      "filename": "nature_forest.mp4",
+      "category": "nature",
+      "description": "Sunlight filtering through tall trees in a dense green forest"
+    },
+    "v11": {
+      "filename": "nature_birds.mp4",
+      "category": "nature",
+      "description": "Birds perched on branches and flying between trees"
+    },
+    "v12": {
+      "filename": "urban_traffic.mp4",
+      "category": "urban",
+      "description": "Cars and buses moving through a busy city street intersection"
+    },
+    "v13": {
+      "filename": "urban_pedestrians.mp4",
+      "category": "urban",
+      "description": "Pedestrians walking on a crowded city sidewalk near shops"
+    },
+    "v14": {
+      "filename": "urban_construction.mp4",
+      "category": "urban",
+      "description": "A construction site with cranes and scaffolding on a building"
+    },
+    "v15": {
+      "filename": "urban_skyline.mp4",
+      "category": "urban",
+      "description": "A city skyline with tall buildings seen from a distance at dusk"
+    },
+    "v16": {
+      "filename": "tech_typing.mp4",
+      "category": "technology",
+      "description": "Hands typing rapidly on a laptop keyboard at a desk"
+    },
+    "v17": {
+      "filename": "tech_soldering.mp4",
+      "category": "technology",
+      "description": "A person soldering electronic components onto a circuit board"
+    },
+    "v18": {
+      "filename": "tech_3dprinter.mp4",
+      "category": "technology",
+      "description": "A 3D printer extruding filament to create a plastic object"
+    },
+    "v19": {
+      "filename": "tech_robotics.mp4",
+      "category": "technology",
+      "description": "A small robot moving and responding on a tabletop"
+    }
+  },
+  "queries": [
+    {
+      "query_id": "q000",
+      "text": "Basketball players practicing layups and dribbling on an outdoor court",
+      "type": "exact",
+      "target_video": "v00",
+      "category": "sports"
+    },
+    {
+      "query_id": "q001",
+      "text": "People playing a competitive sport outdoors",
+      "type": "partial",
+      "target_video": "v00",
+      "category": "sports"
+    },
+    {
+      "query_id": "q002",
+      "text": "A chef rapidly slicing ingredients with a sharp knife",
+      "type": "hard_negative",
+      "target_video": "v00",
+      "expected_category": "cooking",
+      "category": "sports"
+    },
+    {
+      "query_id": "q003",
+      "text": "Soccer players kicking a ball on a green grass field",
+      "type": "exact",
+      "target_video": "v01",
+      "category": "sports"
+    },
+    {
+      "query_id": "q004",
+      "text": "People playing a competitive sport outdoors",
+      "type": "partial",
+      "target_video": "v01",
+      "category": "sports"
+    },
+    {
+      "query_id": "q005",
+      "text": "A chef rapidly slicing ingredients with a sharp knife",
+      "type": "hard_negative",
+      "target_video": "v01",
+      "expected_category": "cooking",
+      "category": "sports"
+    },
+    {
+      "query_id": "q006",
+      "text": "A swimmer doing freestyle strokes in a swimming pool with lane dividers",
+      "type": "exact",
+      "target_video": "v02",
+      "category": "sports"
+    },
+    {
+      "query_id": "q007",
+      "text": "People playing a competitive sport outdoors",
+      "type": "partial",
+      "target_video": "v02",
+      "category": "sports"
+    },
+    {
+      "query_id": "q008",
+      "text": "A chef rapidly slicing ingredients with a sharp knife",
+      "type": "hard_negative",
+      "target_video": "v02",
+      "expected_category": "cooking",
+      "category": "sports"
+    },
+    {
+      "query_id": "q009",
+      "text": "Runners sprinting on an athletic track during a race",
+      "type": "exact",
+      "target_video": "v03",
+      "category": "sports"
+    },
+    {
+      "query_id": "q010",
+      "text": "People playing a competitive sport outdoors",
+      "type": "partial",
+      "target_video": "v03",
+      "category": "sports"
+    },
+    {
+      "query_id": "q011",
+      "text": "A chef rapidly slicing ingredients with a sharp knife",
+      "type": "hard_negative",
+      "target_video": "v03",
+      "expected_category": "cooking",
+      "category": "sports"
+    },
+    {
+      "query_id": "q012",
+      "text": "A person chopping vegetables with a knife on a wooden cutting board",
+      "type": "exact",
+      "target_video": "v04",
+      "category": "cooking"
+    },
+    {
+      "query_id": "q013",
+      "text": "Someone preparing food in a kitchen",
+      "type": "partial",
+      "target_video": "v04",
+      "category": "cooking"
+    },
+    {
+      "query_id": "q014",
+      "text": "A technician carefully assembling small electronic parts by hand",
+      "type": "hard_negative",
+      "target_video": "v04",
+      "expected_category": "technology",
+      "category": "cooking"
+    },
+    {
+      "query_id": "q015",
+      "text": "Stirring food in a pot on a stovetop in a home kitchen",
+      "type": "exact",
+      "target_video": "v05",
+      "category": "cooking"
+    },
+    {
+      "query_id": "q016",
+      "text": "Someone preparing food in a kitchen",
+      "type": "partial",
+      "target_video": "v05",
+      "category": "cooking"
+    },
+    {
+      "query_id": "q017",
+      "text": "A technician carefully assembling small electronic parts by hand",
+      "type": "hard_negative",
+      "target_video": "v05",
+      "expected_category": "technology",
+      "category": "cooking"
+    },
+    {
+      "query_id": "q018",
+      "text": "Pouring liquid batter into a baking pan for a cake",
+      "type": "exact",
+      "target_video": "v06",
+      "category": "cooking"
+    },
+    {
+      "query_id": "q019",
+      "text": "Someone preparing food in a kitchen",
+      "type": "partial",
+      "target_video": "v06",
+      "category": "cooking"
+    },
+    {
+      "query_id": "q020",
+      "text": "A technician carefully assembling small electronic parts by hand",
+      "type": "hard_negative",
+      "target_video": "v06",
+      "expected_category": "technology",
+      "category": "cooking"
+    },
+    {
+      "query_id": "q021",
+      "text": "A chef carefully arranging food on a plate in a restaurant kitchen",
+      "type": "exact",
+      "target_video": "v07",
+      "category": "cooking"
+    },
+    {
+      "query_id": "q022",
+      "text": "Someone preparing food in a kitchen",
+      "type": "partial",
+      "target_video": "v07",
+      "category": "cooking"
+    },
+    {
+      "query_id": "q023",
+      "text": "A technician carefully assembling small electronic parts by hand",
+      "type": "hard_negative",
+      "target_video": "v07",
+      "expected_category": "technology",
+      "category": "cooking"
+    },
+    {
+      "query_id": "q024",
+      "text": "A waterfall cascading over rocks surrounded by green vegetation",
+      "type": "exact",
+      "target_video": "v08",
+      "category": "nature"
+    },
+    {
+      "query_id": "q025",
+      "text": "A natural landscape with water or vegetation",
+      "type": "partial",
+      "target_video": "v08",
+      "category": "nature"
+    },
+    {
+      "query_id": "q026",
+      "text": "A quiet residential street with houses and parked cars",
+      "type": "hard_negative",
+      "target_video": "v08",
+      "expected_category": "urban",
+      "category": "nature"
+    },
+    {
+      "query_id": "q027",
+      "text": "Ocean waves rolling and crashing onto a sandy beach shore",
+      "type": "exact",
+      "target_video": "v09",
+      "category": "nature"
+    },
+    {
+      "query_id": "q028",
+      "text": "A natural landscape with water or vegetation",
+      "type": "partial",
+      "target_video": "v09",
+      "category": "nature"
+    },
+    {
+      "query_id": "q029",
+      "text": "A quiet residential street with houses and parked cars",
+      "type": "hard_negative",
+      "target_video": "v09",
+      "expected_category": "urban",
+      "category": "nature"
+    },
+    {
+      "query_id": "q030",
+      "text": "Sunlight filtering through tall trees in a dense green forest",
+      "type": "exact",
+      "target_video": "v10",
+      "category": "nature"
+    },
+    {
+      "query_id": "q031",
+      "text": "A natural landscape with water or vegetation",
+      "type": "partial",
+      "target_video": "v10",
+      "category": "nature"
+    },
+    {
+      "query_id": "q032",
+      "text": "A quiet residential street with houses and parked cars",
+      "type": "hard_negative",
+      "target_video": "v10",
+      "expected_category": "urban",
+      "category": "nature"
+    },
+    {
+      "query_id": "q033",
+      "text": "Birds perched on branches and flying between trees",
+      "type": "exact",
+      "target_video": "v11",
+      "category": "nature"
+    },
+    {
+      "query_id": "q034",
+      "text": "A natural landscape with water or vegetation",
+      "type": "partial",
+      "target_video": "v11",
+      "category": "nature"
+    },
+    {
+      "query_id": "q035",
+      "text": "A quiet residential street with houses and parked cars",
+      "type": "hard_negative",
+      "target_video": "v11",
+      "expected_category": "urban",
+      "category": "nature"
+    },
+    {
+      "query_id": "q036",
+      "text": "Cars and buses moving through a busy city street intersection",
+      "type": "exact",
+      "target_video": "v12",
+      "category": "urban"
+    },
+    {
+      "query_id": "q037",
+      "text": "A busy scene in a modern city",
+      "type": "partial",
+      "target_video": "v12",
+      "category": "urban"
+    },
+    {
+      "query_id": "q038",
+      "text": "A calm lake reflecting mountains in the distance",
+      "type": "hard_negative",
+      "target_video": "v12",
+      "expected_category": "nature",
+      "category": "urban"
+    },
+    {
+      "query_id": "q039",
+      "text": "Pedestrians walking on a crowded city sidewalk near shops",
+      "type": "exact",
+      "target_video": "v13",
+      "category": "urban"
+    },
+    {
+      "query_id": "q040",
+      "text": "A busy scene in a modern city",
+      "type": "partial",
+      "target_video": "v13",
+      "category": "urban"
+    },
+    {
+      "query_id": "q041",
+      "text": "A calm lake reflecting mountains in the distance",
+      "type": "hard_negative",
+      "target_video": "v13",
+      "expected_category": "nature",
+      "category": "urban"
+    },
+    {
+      "query_id": "q042",
+      "text": "A construction site with cranes and scaffolding on a building",
+      "type": "exact",
+      "target_video": "v14",
+      "category": "urban"
+    },
+    {
+      "query_id": "q043",
+      "text": "A busy scene in a modern city",
+      "type": "partial",
+      "target_video": "v14",
+      "category": "urban"
+    },
+    {
+      "query_id": "q044",
+      "text": "A calm lake reflecting mountains in the distance",
+      "type": "hard_negative",
+      "target_video": "v14",
+      "expected_category": "nature",
+      "category": "urban"
+    },
+    {
+      "query_id": "q045",
+      "text": "A city skyline with tall buildings seen from a distance at dusk",
+      "type": "exact",
+      "target_video": "v15",
+      "category": "urban"
+    },
+    {
+      "query_id": "q046",
+      "text": "A busy scene in a modern city",
+      "type": "partial",
+      "target_video": "v15",
+      "category": "urban"
+    },
+    {
+      "query_id": "q047",
+      "text": "A calm lake reflecting mountains in the distance",
+      "type": "hard_negative",
+      "target_video": "v15",
+      "expected_category": "nature",
+      "category": "urban"
+    },
+    {
+      "query_id": "q048",
+      "text": "Hands typing rapidly on a laptop keyboard at a desk",
+      "type": "exact",
+      "target_video": "v16",
+      "category": "technology"
+    },
+    {
+      "query_id": "q049",
+      "text": "Someone working with electronic equipment or computers",
+      "type": "partial",
+      "target_video": "v16",
+      "category": "technology"
+    },
+    {
+      "query_id": "q050",
+      "text": "A baker using a mixer to blend ingredients in a bowl",
+      "type": "hard_negative",
+      "target_video": "v16",
+      "expected_category": "cooking",
+      "category": "technology"
+    },
+    {
+      "query_id": "q051",
+      "text": "A person soldering electronic components onto a circuit board",
+      "type": "exact",
+      "target_video": "v17",
+      "category": "technology"
+    },
+    {
+      "query_id": "q052",
+      "text": "Someone working with electronic equipment or computers",
+      "type": "partial",
+      "target_video": "v17",
+      "category": "technology"
+    },
+    {
+      "query_id": "q053",
+      "text": "A baker using a mixer to blend ingredients in a bowl",
+      "type": "hard_negative",
+      "target_video": "v17",
+      "expected_category": "cooking",
+      "category": "technology"
+    },
+    {
+      "query_id": "q054",
+      "text": "A 3D printer extruding filament to create a plastic object",
+      "type": "exact",
+      "target_video": "v18",
+      "category": "technology"
+    },
+    {
+      "query_id": "q055",
+      "text": "Someone working with electronic equipment or computers",
+      "type": "partial",
+      "target_video": "v18",
+      "category": "technology"
+    },
+    {
+      "query_id": "q056",
+      "text": "A baker using a mixer to blend ingredients in a bowl",
+      "type": "hard_negative",
+      "target_video": "v18",
+      "expected_category": "cooking",
+      "category": "technology"
+    },
+    {
+      "query_id": "q057",
+      "text": "A small robot moving and responding on a tabletop",
+      "type": "exact",
+      "target_video": "v19",
+      "category": "technology"
+    },
+    {
+      "query_id": "q058",
+      "text": "Someone working with electronic equipment or computers",
+      "type": "partial",
+      "target_video": "v19",
+      "category": "technology"
+    },
+    {
+      "query_id": "q059",
+      "text": "A baker using a mixer to blend ingredients in a bowl",
+      "type": "hard_negative",
+      "target_video": "v19",
+      "expected_category": "cooking",
+      "category": "technology"
+    }
+  ],
+  "relevance_matrix": {
+    "q000": {
+      "v00": 2,
+      "v01": 1,
+      "v02": 1,
+      "v03": 1
+    },
+    "q001": {
+      "v00": 2,
+      "v01": 1,
+      "v02": 1,
+      "v03": 1
+    },
+    "q002": {
+      "v04": 1,
+      "v05": 1,
+      "v06": 1,
+      "v07": 1
+    },
+    "q003": {
+      "v01": 2,
+      "v00": 1,
+      "v02": 1,
+      "v03": 1
+    },
+    "q004": {
+      "v00": 1,
+      "v01": 2,
+      "v02": 1,
+      "v03": 1
+    },
+    "q005": {
+      "v04": 1,
+      "v05": 1,
+      "v06": 1,
+      "v07": 1
+    },
+    "q006": {
+      "v02": 2,
+      "v00": 1,
+      "v01": 1,
+      "v03": 1
+    },
+    "q007": {
+      "v00": 1,
+      "v01": 1,
+      "v02": 2,
+      "v03": 1
+    },
+    "q008": {
+      "v04": 1,
+      "v05": 1,
+      "v06": 1,
+      "v07": 1
+    },
+    "q009": {
+      "v03": 2,
+      "v00": 1,
+      "v01": 1,
+      "v02": 1
+    },
+    "q010": {
+      "v00": 1,
+      "v01": 1,
+      "v02": 1,
+      "v03": 2
+    },
+    "q011": {
+      "v04": 1,
+      "v05": 1,
+      "v06": 1,
+      "v07": 1
+    },
+    "q012": {
+      "v04": 2,
+      "v05": 1,
+      "v06": 1,
+      "v07": 1
+    },
+    "q013": {
+      "v04": 2,
+      "v05": 1,
+      "v06": 1,
+      "v07": 1
+    },
+    "q014": {
+      "v16": 1,
+      "v17": 1,
+      "v18": 1,
+      "v19": 1
+    },
+    "q015": {
+      "v05": 2,
+      "v04": 1,
+      "v06": 1,
+      "v07": 1
+    },
+    "q016": {
+      "v04": 1,
+      "v05": 2,
+      "v06": 1,
+      "v07": 1
+    },
+    "q017": {
+      "v16": 1,
+      "v17": 1,
+      "v18": 1,
+      "v19": 1
+    },
+    "q018": {
+      "v06": 2,
+      "v04": 1,
+      "v05": 1,
+      "v07": 1
+    },
+    "q019": {
+      "v04": 1,
+      "v05": 1,
+      "v06": 2,
+      "v07": 1
+    },
+    "q020": {
+      "v16": 1,
+      "v17": 1,
+      "v18": 1,
+      "v19": 1
+    },
+    "q021": {
+      "v07": 2,
+      "v04": 1,
+      "v05": 1,
+      "v06": 1
+    },
+    "q022": {
+      "v04": 1,
+      "v05": 1,
+      "v06": 1,
+      "v07": 2
+    },
+    "q023": {
+      "v16": 1,
+      "v17": 1,
+      "v18": 1,
+      "v19": 1
+    },
+    "q024": {
+      "v08": 2,
+      "v09": 1,
+      "v10": 1,
+      "v11": 1
+    },
+    "q025": {
+      "v08": 2,
+      "v09": 1,
+      "v10": 1,
+      "v11": 1
+    },
+    "q026": {
+      "v12": 1,
+      "v13": 1,
+      "v14": 1,
+      "v15": 1
+    },
+    "q027": {
+      "v09": 2,
+      "v08": 1,
+      "v10": 1,
+      "v11": 1
+    },
+    "q028": {
+      "v08": 1,
+      "v09": 2,
+      "v10": 1,
+      "v11": 1
+    },
+    "q029": {
+      "v12": 1,
+      "v13": 1,
+      "v14": 1,
+      "v15": 1
+    },
+    "q030": {
+      "v10": 2,
+      "v08": 1,
+      "v09": 1,
+      "v11": 1
+    },
+    "q031": {
+      "v08": 1,
+      "v09": 1,
+      "v10": 2,
+      "v11": 1
+    },
+    "q032": {
+      "v12": 1,
+      "v13": 1,
+      "v14": 1,
+      "v15": 1
+    },
+    "q033": {
+      "v11": 2,
+      "v08": 1,
+      "v09": 1,
+      "v10": 1
+    },
+    "q034": {
+      "v08": 1,
+      "v09": 1,
+      "v10": 1,
+      "v11": 2
+    },
+    "q035": {
+      "v12": 1,
+      "v13": 1,
+      "v14": 1,
+      "v15": 1
+    },
+    "q036": {
+      "v12": 2,
+      "v13": 1,
+      "v14": 1,
+      "v15": 1
+    },
+    "q037": {
+      "v12": 2,
+      "v13": 1,
+      "v14": 1,
+      "v15": 1
+    },
+    "q038": {
+      "v08": 1,
+      "v09": 1,
+      "v10": 1,
+      "v11": 1
+    },
+    "q039": {
+      "v13": 2,
+      "v12": 1,
+      "v14": 1,
+      "v15": 1
+    },
+    "q040": {
+      "v12": 1,
+      "v13": 2,
+      "v14": 1,
+      "v15": 1
+    },
+    "q041": {
+      "v08": 1,
+      "v09": 1,
+      "v10": 1,
+      "v11": 1
+    },
+    "q042": {
+      "v14": 2,
+      "v12": 1,
+      "v13": 1,
+      "v15": 1
+    },
+    "q043": {
+      "v12": 1,
+      "v13": 1,
+      "v14": 2,
+      "v15": 1
+    },
+    "q044": {
+      "v08": 1,
+      "v09": 1,
+      "v10": 1,
+      "v11": 1
+    },
+    "q045": {
+      "v15": 2,
+      "v12": 1,
+      "v13": 1,
+      "v14": 1
+    },
+    "q046": {
+      "v12": 1,
+      "v13": 1,
+      "v14": 1,
+      "v15": 2
+    },
+    "q047": {
+      "v08": 1,
+      "v09": 1,
+      "v10": 1,
+      "v11": 1
+    },
+    "q048": {
+      "v16": 2,
+      "v17": 1,
+      "v18": 1,
+      "v19": 1
+    },
+    "q049": {
+      "v16": 2,
+      "v17": 1,
+      "v18": 1,
+      "v19": 1
+    },
+    "q050": {
+      "v04": 1,
+      "v05": 1,
+      "v06": 1,
+      "v07": 1
+    },
+    "q051": {
+      "v17": 2,
+      "v16": 1,
+      "v18": 1,
+      "v19": 1
+    },
+    "q052": {
+      "v16": 1,
+      "v17": 2,
+      "v18": 1,
+      "v19": 1
+    },
+    "q053": {
+      "v04": 1,
+      "v05": 1,
+      "v06": 1,
+      "v07": 1
+    },
+    "q054": {
+      "v18": 2,
+      "v16": 1,
+      "v17": 1,
+      "v19": 1
+    },
+    "q055": {
+      "v16": 1,
+      "v17": 1,
+      "v18": 2,
+      "v19": 1
+    },
+    "q056": {
+      "v04": 1,
+      "v05": 1,
+      "v06": 1,
+      "v07": 1
+    },
+    "q057": {
+      "v19": 2,
+      "v16": 1,
+      "v17": 1,
+      "v18": 1
+    },
+    "q058": {
+      "v16": 1,
+      "v17": 1,
+      "v18": 1,
+      "v19": 2
+    },
+    "q059": {
+      "v04": 1,
+      "v05": 1,
+      "v06": 1,
+      "v07": 1
+    }
+  },
+  "metadata": {
+    "num_videos": 20,
+    "num_queries": 60,
+    "categories": [
+      "sports",
+      "cooking",
+      "nature",
+      "urban",
+      "technology"
+    ],
+    "relevance_grades": {
+      "2": "exact match",
+      "1": "partial / same-category match",
+      "0": "irrelevant (implicit \u2014 not in relevance dict)"
+    },
+    "video_characteristics": {
+      "resolution": "640x360 (360p)",
+      "duration": "5-15 seconds",
+      "format": "MP4 / H.264",
+      "audio": "ambient / natural"
+    }
+  }
+}

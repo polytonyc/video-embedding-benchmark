@@ -1,0 +1,2497 @@
+{
+  "aggregated": {
+    "ndcg@1": {
+      "mean": 0.1888888888888889,
+      "std": 0.3567687635111627,
+      "n": 60
+    },
+    "ndcg@5": {
+      "mean": 0.32725248288748293,
+      "std": 0.22860764335083517,
+      "n": 60
+    },
+    "ndcg@10": {
+      "mean": 0.469590046161757,
+      "std": 0.18547789571887519,
+      "n": 60
+    },
+    "recall@1": {
+      "mean": 0.06666666666666667,
+      "std": 0.11055415967851334,
+      "n": 60
+    },
+    "recall@5": {
+      "mean": 0.36666666666666664,
+      "std": 0.196143371598997,
+      "n": 60
+    },
+    "recall@10": {
+      "mean": 0.6708333333333333,
+      "std": 0.20151337148906243,
+      "n": 60
+    },
+    "precision@5": {
+      "mean": 0.29333333333333333,
+      "std": 0.1569146972791976,
+      "n": 60
+    },
+    "map@10": {
+      "mean": 0.3381845238095238,
+      "std": 0.1713372354412979,
+      "n": 60
+    },
+    "mrr": {
+      "mean": 0.5204377104377104,
+      "std": 0.3152638023364808,
+      "n": 60
+    }
+  },
+  "by_query_type": {
+    "exact": {
+      "ndcg@1": {
+        "mean": 0.26666666666666666,
+        "std": 0.38873012632302006,
+        "n": 20
+      },
+      "ndcg@5": {
+        "mean": 0.37837720560651006,
+        "std": 0.26474685879059867,
+        "n": 20
+      },
+      "ndcg@10": {
+        "mean": 0.4807166784679617,
+        "std": 0.24417090592525012,
+        "n": 20
+      },
+      "recall@1": {
+        "mean": 0.1,
+        "std": 0.12247448713915891,
+        "n": 20
+      },
+      "recall@5": {
+        "mean": 0.4,
+        "std": 0.24238399287081647,
+        "n": 20
+      },
+      "recall@10": {
+        "mean": 0.6125,
+        "std": 0.2678035660703569,
+        "n": 20
+      },
+      "precision@5": {
+        "mean": 0.32,
+        "std": 0.19390719429665315,
+        "n": 20
+      },
+      "map@10": {
+        "mean": 0.36024801587301586,
+        "std": 0.21682013709116144,
+        "n": 20
+      },
+      "mrr": {
+        "mean": 0.6057575757575757,
+        "std": 0.34911918551305166,
+        "n": 20
+      }
+    },
+    "partial": {
+      "ndcg@1": {
+        "mean": 0.09999999999999999,
+        "std": 0.23804761428476168,
+        "n": 20
+      },
+      "ndcg@5": {
+        "mean": 0.281456253054359,
+        "std": 0.21588539258051226,
+        "n": 20
+      },
+      "ndcg@10": {
+        "mean": 0.4272929316734248,
+        "std": 0.18089394025069322,
+        "n": 20
+      },
+      "recall@1": {
+        "mean": 0.05,
+        "std": 0.1,
+        "n": 20
+      },
+      "recall@5": {
+        "mean": 0.35,
+        "std": 0.19999999999999998,
+        "n": 20
+      },
+      "recall@10": {
+        "mean": 0.7,
+        "std": 0.09999999999999999,
+        "n": 20
+      },
+      "precision@5": {
+        "mean": 0.2800000000000001,
+        "std": 0.16,
+        "n": 20
+      },
+      "map@10": {
+        "mean": 0.328829365079365,
+        "std": 0.1725313999340842,
+        "n": 20
+      },
+      "mrr": {
+        "mean": 0.48888888888888893,
+        "std": 0.2927097749404331,
+        "n": 20
+      }
+    },
+    "hard_negative": {
+      "ndcg@1": {
+        "mean": 0.2,
+        "std": 0.4000000000000001,
+        "n": 20
+      },
+      "ndcg@5": {
+        "mean": 0.3219239900015796,
+        "std": 0.18800940681166986,
+        "n": 20
+      },
+      "ndcg@10": {
+        "mean": 0.5007605283438842,
+        "std": 0.08932890730969585,
+        "n": 20
+      },
+      "recall@1": {
+        "mean": 0.05,
+        "std": 0.10000000000000002,
+        "n": 20
+      },
+      "recall@5": {
+        "mean": 0.35,
+        "std": 0.12247448713915891,
+        "n": 20
+      },
+      "recall@10": {
+        "mean": 0.7,
+        "std": 0.18708286933869706,
+        "n": 20
+      },
+      "precision@5": {
+        "mean": 0.2800000000000001,
+        "std": 0.09797958971132714,
+        "n": 20
+      },
+      "map@10": {
+        "mean": 0.32547619047619036,
+        "std": 0.10273981955182689,
+        "n": 20
+      },
+      "mrr": {
+        "mean": 0.4666666666666668,
+        "std": 0.2818589087547961,
+        "n": 20
+      }
+    }
+  },
+  "per_query": [
+    {
+      "query_id": "q000",
+      "text": "Basketball players practicing layups and dribbling on an outdoor court",
+      "type": "exact",
+      "target_video": "v00",
+      "metrics": {
+        "ndcg@1": 0.0,
+        "ndcg@5": 0.0,
+        "ndcg@10": 0.0,
+        "recall@1": 0.0,
+        "recall@5": 0.0,
+        "recall@10": 0.0,
+        "precision@5": 0.0,
+        "map@10": 0.0,
+        "mrr": 0.09090909090909091
+      },
+      "top_5_videos": [
+        "v18",
+        "v11",
+        "v17",
+        "v12",
+        "v14"
+      ],
+      "top_5_similarities": [
+        0.2110825926065445,
+        0.2034822404384613,
+        0.18886201083660126,
+        0.18862253427505493,
+        0.18570291996002197
+      ],
+      "top_5_relevances": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "query_id": "q001",
+      "text": "People playing a competitive sport outdoors",
+      "type": "partial",
+      "target_video": "v00",
+      "metrics": {
+        "ndcg@1": 0.0,
+        "ndcg@5": 0.0,
+        "ndcg@10": 0.12936119026218404,
+        "recall@1": 0.0,
+        "recall@5": 0.0,
+        "recall@10": 0.5,
+        "precision@5": 0.0,
+        "map@10": 0.07777777777777778,
+        "mrr": 0.1111111111111111
+      },
+      "top_5_videos": [
+        "v18",
+        "v12",
+        "v11",
+        "v17",
+        "v05"
+      ],
+      "top_5_similarities": [
+        0.23044061660766602,
+        0.20461945235729218,
+        0.2045460343360901,
+        0.1968214213848114,
+        0.19607608020305634
+      ],
+      "top_5_relevances": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "query_id": "q002",
+      "text": "A chef rapidly slicing ingredients with a sharp knife",
+      "type": "hard_negative",
+      "target_video": "v00",
+      "metrics": {
+        "ndcg@1": 0.0,
+        "ndcg@5": 0.16812753627111746,
+        "ndcg@10": 0.4373103991125936,
+        "recall@1": 0.0,
+        "recall@5": 0.25,
+        "recall@10": 0.75,
+        "precision@5": 0.2,
+        "map@10": 0.25297619047619047,
+        "mrr": 0.25
+      },
+      "top_5_videos": [
+        "v18",
+        "v17",
+        "v11",
+        "v06",
+        "v12"
+      ],
+      "top_5_similarities": [
+        0.2443789839744568,
+        0.2128167748451233,
+        0.20249900221824646,
+        0.19655196368694305,
+        0.19274607300758362
+      ],
+      "top_5_relevances": [
+        0,
+        0,
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "query_id": "q003",
+      "text": "Soccer players kicking a ball on a green grass field",
+      "type": "exact",
+      "target_video": "v01",
+      "metrics": {
+        "ndcg@1": 0.0,
+        "ndcg@5": 0.0,
+        "ndcg@10": 0.1901072604051544,
+        "recall@1": 0.0,
+        "recall@5": 0.0,
+        "recall@10": 0.25,
+        "precision@5": 0.0,
+        "map@10": 0.025,
+        "mrr": 0.1
+      },
+      "top_5_videos": [
+        "v18",
+        "v11",
+        "v17",
+        "v06",
+        "v05"
+      ],
+      "top_5_similarities": [
+        0.20760689675807953,
+        0.18732422590255737,
+        0.17249032855033875,
+        0.16793377697467804,
+        0.16449853777885437
+      ],
+      "top_5_relevances": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "query_id": "q004",
+      "text": "People playing a competitive sport outdoors",
+      "type": "partial",
+      "target_video": "v01",
+      "metrics": {
+        "ndcg@1": 0.0,
+        "ndcg@5": 0.0,
+        "ndcg@10": 0.12936119026218404,
+        "recall@1": 0.0,
+        "recall@5": 0.0,
+        "recall@10": 0.5,
+        "precision@5": 0.0,
+        "map@10": 0.07777777777777778,
+        "mrr": 0.1111111111111111
+      },
+      "top_5_videos": [
+        "v18",
+        "v12",
+        "v11",
+        "v17",
+        "v05"
+      ],
+      "top_5_similarities": [
+        0.23044061660766602,
+        0.20461945235729218,
+        0.2045460343360901,
+        0.1968214213848114,
+        0.19607608020305634
+      ],
+      "top_5_relevances": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "query_id": "q005",
+      "text": "A chef rapidly slicing ingredients with a sharp knife",
+      "type": "hard_negative",
+      "target_video": "v01",
+      "metrics": {
+        "ndcg@1": 0.0,
+        "ndcg@5": 0.16812753627111746,
+        "ndcg@10": 0.4373103991125936,
+        "recall@1": 0.0,
+        "recall@5": 0.25,
+        "recall@10": 0.75,
+        "precision@5": 0.2,
+        "map@10": 0.25297619047619047,
+        "mrr": 0.25
+      },
+      "top_5_videos": [
+        "v18",
+        "v17",
+        "v11",
+        "v06",
+        "v12"
+      ],
+      "top_5_similarities": [
+        0.2443789839744568,
+        0.2128167748451233,
+        0.20249900221824646,
+        0.19655196368694305,
+        0.19274607300758362
+      ],
+      "top_5_relevances": [
+        0,
+        0,
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "query_id": "q006",
+      "text": "A swimmer doing freestyle strokes in a swimming pool with lane dividers",
+      "type": "exact",
+      "target_video": "v02",
+      "metrics": {
+        "ndcg@1": 0.0,
+        "ndcg@5": 0.0,
+        "ndcg@10": 0.2976333981685482,
+        "recall@1": 0.0,
+        "recall@5": 0.0,
+        "recall@10": 0.5,
+        "precision@5": 0.0,
+        "map@10": 0.09166666666666667,
+        "mrr": 0.16666666666666666
+      },
+      "top_5_videos": [
+        "v18",
+        "v11",
+        "v12",
+        "v17",
+        "v10"
+      ],
+      "top_5_similarities": [
+        0.20870770514011383,
+        0.19719000160694122,
+        0.18919745087623596,
+        0.18743810057640076,
+        0.17923882603645325
+      ],
+      "top_5_relevances": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "query_id": "q007",
+      "text": "People playing a competitive sport outdoors",
+      "type": "partial",
+      "target_video": "v02",
+      "metrics": {
+        "ndcg@1": 0.0,
+        "ndcg@5": 0.0,
+        "ndcg@10": 0.2613453971831158,
+        "recall@1": 0.0,
+        "recall@5": 0.0,
+        "recall@10": 0.5,
+        "precision@5": 0.0,
+        "map@10": 0.07777777777777778,
+        "mrr": 0.1111111111111111
+      },
+      "top_5_videos": [
+        "v18",
+        "v12",
+        "v11",
+        "v17",
+        "v05"
+      ],
+      "top_5_similarities": [
+        0.23044061660766602,
+        0.20461945235729218,
+        0.2045460343360901,
+        0.1968214213848114,
+        0.19607608020305634
+      ],
+      "top_5_relevances": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "query_id": "q008",
+      "text": "A chef rapidly slicing ingredients with a sharp knife",
+      "type": "hard_negative",
+      "target_video": "v02",
+      "metrics": {
+        "ndcg@1": 0.0,
+        "ndcg@5": 0.16812753627111746,
+        "ndcg@10": 0.4373103991125936,
+        "recall@1": 0.0,
+        "recall@5": 0.25,
+        "recall@10": 0.75,
+        "precision@5": 0.2,
+        "map@10": 0.25297619047619047,
+        "mrr": 0.25
+      },
+      "top_5_videos": [
+        "v18",
+        "v17",
+        "v11",
+        "v06",
+        "v12"
+      ],
+      "top_5_similarities": [
+        0.2443789839744568,
+        0.2128167748451233,
+        0.20249900221824646,
+        0.19655196368694305,
+        0.19274607300758362
+      ],
+      "top_5_relevances": [
+        0,
+        0,
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "query_id": "q009",
+      "text": "Runners sprinting on an athletic track during a race",
+      "type": "exact",
+      "target_video": "v03",
+      "metrics": {
+        "ndcg@1": 0.0,
+        "ndcg@5": 0.0,
+        "ndcg@10": 0.0,
+        "recall@1": 0.0,
+        "recall@5": 0.0,
+        "recall@10": 0.0,
+        "precision@5": 0.0,
+        "map@10": 0.0,
+        "mrr": 0.09090909090909091
+      },
+      "top_5_videos": [
+        "v18",
+        "v12",
+        "v11",
+        "v17",
+        "v06"
+      ],
+      "top_5_similarities": [
+        0.2179546356201172,
+        0.19924502074718475,
+        0.1976112276315689,
+        0.19461609423160553,
+        0.18671926856040955
+      ],
+      "top_5_relevances": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "query_id": "q010",
+      "text": "People playing a competitive sport outdoors",
+      "type": "partial",
+      "target_video": "v03",
+      "metrics": {
+        "ndcg@1": 0.0,
+        "ndcg@5": 0.0,
+        "ndcg@10": 0.25609936386562027,
+        "recall@1": 0.0,
+        "recall@5": 0.0,
+        "recall@10": 0.5,
+        "precision@5": 0.0,
+        "map@10": 0.07777777777777778,
+        "mrr": 0.1111111111111111
+      },
+      "top_5_videos": [
+        "v18",
+        "v12",
+        "v11",
+        "v17",
+        "v05"
+      ],
+      "top_5_similarities": [
+        0.23044061660766602,
+        0.20461945235729218,
+        0.2045460343360901,
+        0.1968214213848114,
+        0.19607608020305634
+      ],
+      "top_5_relevances": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "query_id": "q011",
+      "text": "A chef rapidly slicing ingredients with a sharp knife",
+      "type": "hard_negative",
+      "target_video": "v03",
+      "metrics": {
+        "ndcg@1": 0.0,
+        "ndcg@5": 0.16812753627111746,
+        "ndcg@10": 0.4373103991125936,
+        "recall@1": 0.0,
+        "recall@5": 0.25,
+        "recall@10": 0.75,
+        "precision@5": 0.2,
+        "map@10": 0.25297619047619047,
+        "mrr": 0.25
+      },
+      "top_5_videos": [
+        "v18",
+        "v17",
+        "v11",
+        "v06",
+        "v12"
+      ],
+      "top_5_similarities": [
+        0.2443789839744568,
+        0.2128167748451233,
+        0.20249900221824646,
+        0.19655196368694305,
+        0.19274607300758362
+      ],
+      "top_5_relevances": [
+        0,
+        0,
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "query_id": "q012",
+      "text": "A person chopping vegetables with a knife on a wooden cutting board",
+      "type": "exact",
+      "target_video": "v04",
+      "metrics": {
+        "ndcg@1": 0.0,
+        "ndcg@5": 0.2327264211588769,
+        "ndcg@10": 0.4959073557393764,
+        "recall@1": 0.0,
+        "recall@5": 0.5,
+        "recall@10": 1.0,
+        "precision@5": 0.4,
+        "map@10": 0.4571428571428572,
+        "mrr": 0.5
+      },
+      "top_5_videos": [
+        "v18",
+        "v05",
+        "v17",
+        "v06",
+        "v11"
+      ],
+      "top_5_similarities": [
+        0.2319227159023285,
+        0.20684781670570374,
+        0.2019294947385788,
+        0.19718164205551147,
+        0.19585472345352173
+      ],
+      "top_5_relevances": [
+        0,
+        1,
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "query_id": "q013",
+      "text": "Someone preparing food in a kitchen",
+      "type": "partial",
+      "target_video": "v04",
+      "metrics": {
+        "ndcg@1": 0.0,
+        "ndcg@5": 0.1383130657200343,
+        "ndcg@10": 0.2894748436843227,
+        "recall@1": 0.0,
+        "recall@5": 0.25,
+        "recall@10": 0.75,
+        "precision@5": 0.2,
+        "map@10": 0.31547619047619047,
+        "mrr": 0.5
+      },
+      "top_5_videos": [
+        "v18",
+        "v06",
+        "v11",
+        "v17",
+        "v12"
+      ],
+      "top_5_similarities": [
+        0.22640356421470642,
+        0.22536301612854004,
+        0.2087806761264801,
+        0.2070399522781372,
+        0.20419463515281677
+      ],
+      "top_5_relevances": [
+        0,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "query_id": "q014",
+      "text": "A technician carefully assembling small electronic parts by hand",
+      "type": "hard_negative",
+      "target_video": "v04",
+      "metrics": {
+        "ndcg@1": 1.0,
+        "ndcg@5": 0.6366824387328317,
+        "ndcg@10": 0.6366824387328317,
+        "recall@1": 0.25,
+        "recall@5": 0.5,
+        "recall@10": 0.5,
+        "precision@5": 0.4,
+        "map@10": 0.5,
+        "mrr": 1.0
+      },
+      "top_5_videos": [
+        "v17",
+        "v18",
+        "v12",
+        "v11",
+        "v14"
+      ],
+      "top_5_similarities": [
+        0.24660903215408325,
+        0.2321872115135193,
+        0.20059353113174438,
+        0.19153530895709991,
+        0.1886105090379715
+      ],
+      "top_5_relevances": [
+        1,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "query_id": "q015",
+      "text": "Stirring food in a pot on a stovetop in a home kitchen",
+      "type": "exact",
+      "target_video": "v05",
+      "metrics": {
+        "ndcg@1": 0.0,
+        "ndcg@5": 0.4671445995090871,
+        "ndcg@10": 0.5402182736844322,
+        "recall@1": 0.0,
+        "recall@5": 0.5,
+        "recall@10": 0.75,
+        "precision@5": 0.4,
+        "map@10": 0.3988095238095238,
+        "mrr": 0.5
+      },
+      "top_5_videos": [
+        "v18",
+        "v06",
+        "v05",
+        "v11",
+        "v17"
+      ],
+      "top_5_similarities": [
+        0.22403767704963684,
+        0.22049430012702942,
+        0.21621185541152954,
+        0.19844947755336761,
+        0.19245250523090363
+      ],
+      "top_5_relevances": [
+        0,
+        1,
+        2,
+        0,
+        0
+      ]
+    },
+    {
+      "query_id": "q016",
+      "text": "Someone preparing food in a kitchen",
+      "type": "partial",
+      "target_video": "v05",
+      "metrics": {
+        "ndcg@1": 0.0,
+        "ndcg@5": 0.1383130657200343,
+        "ndcg@10": 0.44565105126220944,
+        "recall@1": 0.0,
+        "recall@5": 0.25,
+        "recall@10": 0.75,
+        "precision@5": 0.2,
+        "map@10": 0.31547619047619047,
+        "mrr": 0.5
+      },
+      "top_5_videos": [
+        "v18",
+        "v06",
+        "v11",
+        "v17",
+        "v12"
+      ],
+      "top_5_similarities": [
+        0.22640356421470642,
+        0.22536301612854004,
+        0.2087806761264801,
+        0.2070399522781372,
+        0.20419463515281677
+      ],
+      "top_5_relevances": [
+        0,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "query_id": "q017",
+      "text": "A technician carefully assembling small electronic parts by hand",
+      "type": "hard_negative",
+      "target_video": "v05",
+      "metrics": {
+        "ndcg@1": 1.0,
+        "ndcg@5": 0.6366824387328317,
+        "ndcg@10": 0.6366824387328317,
+        "recall@1": 0.25,
+        "recall@5": 0.5,
+        "recall@10": 0.5,
+        "precision@5": 0.4,
+        "map@10": 0.5,
+        "mrr": 1.0
+      },
+      "top_5_videos": [
+        "v17",
+        "v18",
+        "v12",
+        "v11",
+        "v14"
+      ],
+      "top_5_similarities": [
+        0.24660903215408325,
+        0.2321872115135193,
+        0.20059353113174438,
+        0.19153530895709991,
+        0.1886105090379715
+      ],
+      "top_5_relevances": [
+        1,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "query_id": "q018",
+      "text": "Pouring liquid batter into a baking pan for a cake",
+      "type": "exact",
+      "target_video": "v06",
+      "metrics": {
+        "ndcg@1": 0.0,
+        "ndcg@5": 0.4671445995090871,
+        "ndcg@10": 0.5402182736844322,
+        "recall@1": 0.0,
+        "recall@5": 0.5,
+        "recall@10": 0.75,
+        "precision@5": 0.4,
+        "map@10": 0.3988095238095238,
+        "mrr": 0.5
+      },
+      "top_5_videos": [
+        "v18",
+        "v05",
+        "v06",
+        "v11",
+        "v17"
+      ],
+      "top_5_similarities": [
+        0.2438741773366928,
+        0.21043822169303894,
+        0.20458398759365082,
+        0.1993376612663269,
+        0.19701942801475525
+      ],
+      "top_5_relevances": [
+        0,
+        1,
+        2,
+        0,
+        0
+      ]
+    },
+    {
+      "query_id": "q019",
+      "text": "Someone preparing food in a kitchen",
+      "type": "partial",
+      "target_video": "v06",
+      "metrics": {
+        "ndcg@1": 0.0,
+        "ndcg@5": 0.41493919716010286,
+        "ndcg@10": 0.5661009751243914,
+        "recall@1": 0.0,
+        "recall@5": 0.25,
+        "recall@10": 0.75,
+        "precision@5": 0.2,
+        "map@10": 0.31547619047619047,
+        "mrr": 0.5
+      },
+      "top_5_videos": [
+        "v18",
+        "v06",
+        "v11",
+        "v17",
+        "v12"
+      ],
+      "top_5_similarities": [
+        0.22640356421470642,
+        0.22536301612854004,
+        0.2087806761264801,
+        0.2070399522781372,
+        0.20419463515281677
+      ],
+      "top_5_relevances": [
+        0,
+        2,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "query_id": "q020",
+      "text": "A technician carefully assembling small electronic parts by hand",
+      "type": "hard_negative",
+      "target_video": "v06",
+      "metrics": {
+        "ndcg@1": 1.0,
+        "ndcg@5": 0.6366824387328317,
+        "ndcg@10": 0.6366824387328317,
+        "recall@1": 0.25,
+        "recall@5": 0.5,
+        "recall@10": 0.5,
+        "precision@5": 0.4,
+        "map@10": 0.5,
+        "mrr": 1.0
+      },
+      "top_5_videos": [
+        "v17",
+        "v18",
+        "v12",
+        "v11",
+        "v14"
+      ],
+      "top_5_similarities": [
+        0.24660903215408325,
+        0.2321872115135193,
+        0.20059353113174438,
+        0.19153530895709991,
+        0.1886105090379715
+      ],
+      "top_5_relevances": [
+        1,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "query_id": "q021",
+      "text": "A chef carefully arranging food on a plate in a restaurant kitchen",
+      "type": "exact",
+      "target_video": "v07",
+      "metrics": {
+        "ndcg@1": 0.3333333333333333,
+        "ndcg@5": 0.502461088842563,
+        "ndcg@10": 0.5805491926315064,
+        "recall@1": 0.25,
+        "recall@5": 0.5,
+        "recall@10": 0.75,
+        "precision@5": 0.4,
+        "map@10": 0.5,
+        "mrr": 1.0
+      },
+      "top_5_videos": [
+        "v06",
+        "v17",
+        "v18",
+        "v07",
+        "v12"
+      ],
+      "top_5_similarities": [
+        0.2135659158229828,
+        0.21081802248954773,
+        0.20871925354003906,
+        0.20299392938613892,
+        0.2028128206729889
+      ],
+      "top_5_relevances": [
+        1,
+        0,
+        0,
+        2,
+        0
+      ]
+    },
+    {
+      "query_id": "q022",
+      "text": "Someone preparing food in a kitchen",
+      "type": "partial",
+      "target_video": "v07",
+      "metrics": {
+        "ndcg@1": 0.0,
+        "ndcg@5": 0.1383130657200343,
+        "ndcg@10": 0.43562219203501285,
+        "recall@1": 0.0,
+        "recall@5": 0.25,
+        "recall@10": 0.75,
+        "precision@5": 0.2,
+        "map@10": 0.31547619047619047,
+        "mrr": 0.5
+      },
+      "top_5_videos": [
+        "v18",
+        "v06",
+        "v11",
+        "v17",
+        "v12"
+      ],
+      "top_5_similarities": [
+        0.22640356421470642,
+        0.22536301612854004,
+        0.2087806761264801,
+        0.2070399522781372,
+        0.20419463515281677
+      ],
+      "top_5_relevances": [
+        0,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "query_id": "q023",
+      "text": "A technician carefully assembling small electronic parts by hand",
+      "type": "hard_negative",
+      "target_video": "v07",
+      "metrics": {
+        "ndcg@1": 1.0,
+        "ndcg@5": 0.6366824387328317,
+        "ndcg@10": 0.6366824387328317,
+        "recall@1": 0.25,
+        "recall@5": 0.5,
+        "recall@10": 0.5,
+        "precision@5": 0.4,
+        "map@10": 0.5,
+        "mrr": 1.0
+      },
+      "top_5_videos": [
+        "v17",
+        "v18",
+        "v12",
+        "v11",
+        "v14"
+      ],
+      "top_5_similarities": [
+        0.24660903215408325,
+        0.2321872115135193,
+        0.20059353113174438,
+        0.19153530895709991,
+        0.1886105090379715
+      ],
+      "top_5_relevances": [
+        1,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "query_id": "q024",
+      "text": "A waterfall cascading over rocks surrounded by green vegetation",
+      "type": "exact",
+      "target_video": "v08",
+      "metrics": {
+        "ndcg@1": 0.3333333333333333,
+        "ndcg@5": 0.4232448892278954,
+        "ndcg@10": 0.6424659117539305,
+        "recall@1": 0.25,
+        "recall@5": 0.75,
+        "recall@10": 1.0,
+        "precision@5": 0.6,
+        "map@10": 0.7470238095238095,
+        "mrr": 1.0
+      },
+      "top_5_videos": [
+        "v10",
+        "v18",
+        "v09",
+        "v11",
+        "v05"
+      ],
+      "top_5_similarities": [
+        0.22385522723197937,
+        0.2001635879278183,
+        0.19549134373664856,
+        0.18552857637405396,
+        0.18137970566749573
+      ],
+      "top_5_relevances": [
+        1,
+        0,
+        1,
+        1,
+        0
+      ]
+    },
+    {
+      "query_id": "q025",
+      "text": "A natural landscape with water or vegetation",
+      "type": "partial",
+      "target_video": "v08",
+      "metrics": {
+        "ndcg@1": 0.0,
+        "ndcg@5": 0.2479235769830519,
+        "ndcg@10": 0.317080109843069,
+        "recall@1": 0.0,
+        "recall@5": 0.5,
+        "recall@10": 0.75,
+        "precision@5": 0.4,
+        "map@10": 0.38541666666666663,
+        "mrr": 0.5
+      },
+      "top_5_videos": [
+        "v18",
+        "v11",
+        "v10",
+        "v14",
+        "v12"
+      ],
+      "top_5_similarities": [
+        0.21350297331809998,
+        0.1997411549091339,
+        0.19562901556491852,
+        0.18614943325519562,
+        0.18220946192741394
+      ],
+      "top_5_relevances": [
+        0,
+        1,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "query_id": "q026",
+      "text": "A quiet residential street with houses and parked cars",
+      "type": "hard_negative",
+      "target_video": "v08",
+      "metrics": {
+        "ndcg@1": 0.0,
+        "ndcg@5": 0.16812753627111746,
+        "ndcg@10": 0.4110993609507533,
+        "recall@1": 0.0,
+        "recall@5": 0.25,
+        "recall@10": 0.75,
+        "precision@5": 0.2,
+        "map@10": 0.2089285714285714,
+        "mrr": 0.25
+      },
+      "top_5_videos": [
+        "v18",
+        "v11",
+        "v17",
+        "v12",
+        "v06"
+      ],
+      "top_5_similarities": [
+        0.21714460849761963,
+        0.20915797352790833,
+        0.20194119215011597,
+        0.1961248219013214,
+        0.19402644038200378
+      ],
+      "top_5_relevances": [
+        0,
+        0,
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "query_id": "q027",
+      "text": "Ocean waves rolling and crashing onto a sandy beach shore",
+      "type": "exact",
+      "target_video": "v09",
+      "metrics": {
+        "ndcg@1": 0.0,
+        "ndcg@5": 0.5519508674781105,
+        "ndcg@10": 0.5519508674781105,
+        "recall@1": 0.0,
+        "recall@5": 0.75,
+        "recall@10": 0.75,
+        "precision@5": 0.6,
+        "map@10": 0.44166666666666665,
+        "mrr": 0.5
+      },
+      "top_5_videos": [
+        "v18",
+        "v10",
+        "v09",
+        "v06",
+        "v11"
+      ],
+      "top_5_similarities": [
+        0.22038596868515015,
+        0.20822760462760925,
+        0.1912696361541748,
+        0.18875235319137573,
+        0.18273812532424927
+      ],
+      "top_5_relevances": [
+        0,
+        1,
+        2,
+        0,
+        1
+      ]
+    },
+    {
+      "query_id": "q028",
+      "text": "A natural landscape with water or vegetation",
+      "type": "partial",
+      "target_video": "v09",
+      "metrics": {
+        "ndcg@1": 0.0,
+        "ndcg@5": 0.2479235769830519,
+        "ndcg@10": 0.45539317556310327,
+        "recall@1": 0.0,
+        "recall@5": 0.5,
+        "recall@10": 0.75,
+        "precision@5": 0.4,
+        "map@10": 0.38541666666666663,
+        "mrr": 0.5
+      },
+      "top_5_videos": [
+        "v18",
+        "v11",
+        "v10",
+        "v14",
+        "v12"
+      ],
+      "top_5_similarities": [
+        0.21350297331809998,
+        0.1997411549091339,
+        0.19562901556491852,
+        0.18614943325519562,
+        0.18220946192741394
+      ],
+      "top_5_relevances": [
+        0,
+        1,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "query_id": "q029",
+      "text": "A quiet residential street with houses and parked cars",
+      "type": "hard_negative",
+      "target_video": "v09",
+      "metrics": {
+        "ndcg@1": 0.0,
+        "ndcg@5": 0.16812753627111746,
+        "ndcg@10": 0.4110993609507533,
+        "recall@1": 0.0,
+        "recall@5": 0.25,
+        "recall@10": 0.75,
+        "precision@5": 0.2,
+        "map@10": 0.2089285714285714,
+        "mrr": 0.25
+      },
+      "top_5_videos": [
+        "v18",
+        "v11",
+        "v17",
+        "v12",
+        "v06"
+      ],
+      "top_5_similarities": [
+        0.21714460849761963,
+        0.20915797352790833,
+        0.20194119215011597,
+        0.1961248219013214,
+        0.19402644038200378
+      ],
+      "top_5_relevances": [
+        0,
+        0,
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "query_id": "q030",
+      "text": "Sunlight filtering through tall trees in a dense green forest",
+      "type": "exact",
+      "target_video": "v10",
+      "metrics": {
+        "ndcg@1": 0.0,
+        "ndcg@5": 0.1383130657200343,
+        "ndcg@10": 0.34578266430008575,
+        "recall@1": 0.0,
+        "recall@5": 0.25,
+        "recall@10": 0.5,
+        "precision@5": 0.2,
+        "map@10": 0.1875,
+        "mrr": 0.5
+      },
+      "top_5_videos": [
+        "v18",
+        "v11",
+        "v06",
+        "v05",
+        "v17"
+      ],
+      "top_5_similarities": [
+        0.2099476009607315,
+        0.20444078743457794,
+        0.19732972979545593,
+        0.17909954488277435,
+        0.17785367369651794
+      ],
+      "top_5_relevances": [
+        0,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "query_id": "q031",
+      "text": "A natural landscape with water or vegetation",
+      "type": "partial",
+      "target_video": "v10",
+      "metrics": {
+        "ndcg@1": 0.0,
+        "ndcg@5": 0.4671445995090871,
+        "ndcg@10": 0.5363011323691043,
+        "recall@1": 0.0,
+        "recall@5": 0.5,
+        "recall@10": 0.75,
+        "precision@5": 0.4,
+        "map@10": 0.38541666666666663,
+        "mrr": 0.5
+      },
+      "top_5_videos": [
+        "v18",
+        "v11",
+        "v10",
+        "v14",
+        "v12"
+      ],
+      "top_5_similarities": [
+        0.21350297331809998,
+        0.1997411549091339,
+        0.19562901556491852,
+        0.18614943325519562,
+        0.18220946192741394
+      ],
+      "top_5_relevances": [
+        0,
+        1,
+        2,
+        0,
+        0
+      ]
+    },
+    {
+      "query_id": "q032",
+      "text": "A quiet residential street with houses and parked cars",
+      "type": "hard_negative",
+      "target_video": "v10",
+      "metrics": {
+        "ndcg@1": 0.0,
+        "ndcg@5": 0.16812753627111746,
+        "ndcg@10": 0.4110993609507533,
+        "recall@1": 0.0,
+        "recall@5": 0.25,
+        "recall@10": 0.75,
+        "precision@5": 0.2,
+        "map@10": 0.2089285714285714,
+        "mrr": 0.25
+      },
+      "top_5_videos": [
+        "v18",
+        "v11",
+        "v17",
+        "v12",
+        "v06"
+      ],
+      "top_5_similarities": [
+        0.21714460849761963,
+        0.20915797352790833,
+        0.20194119215011597,
+        0.1961248219013214,
+        0.19402644038200378
+      ],
+      "top_5_relevances": [
+        0,
+        0,
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "query_id": "q033",
+      "text": "Birds perched on branches and flying between trees",
+      "type": "exact",
+      "target_video": "v11",
+      "metrics": {
+        "ndcg@1": 1.0,
+        "ndcg@5": 0.6576630675781056,
+        "ndcg@10": 0.7236551710385714,
+        "recall@1": 0.25,
+        "recall@5": 0.25,
+        "recall@10": 0.5,
+        "precision@5": 0.2,
+        "map@10": 0.3055555555555556,
+        "mrr": 1.0
+      },
+      "top_5_videos": [
+        "v11",
+        "v18",
+        "v14",
+        "v06",
+        "v12"
+      ],
+      "top_5_similarities": [
+        0.24588678777217865,
+        0.22362519800662994,
+        0.1868053674697876,
+        0.1863545924425125,
+        0.18149258196353912
+      ],
+      "top_5_relevances": [
+        2,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "query_id": "q034",
+      "text": "A natural landscape with water or vegetation",
+      "type": "partial",
+      "target_video": "v11",
+      "metrics": {
+        "ndcg@1": 0.0,
+        "ndcg@5": 0.5245497084231204,
+        "ndcg@10": 0.5937062412831376,
+        "recall@1": 0.0,
+        "recall@5": 0.5,
+        "recall@10": 0.75,
+        "precision@5": 0.4,
+        "map@10": 0.38541666666666663,
+        "mrr": 0.5
+      },
+      "top_5_videos": [
+        "v18",
+        "v11",
+        "v10",
+        "v14",
+        "v12"
+      ],
+      "top_5_similarities": [
+        0.21350297331809998,
+        0.1997411549091339,
+        0.19562901556491852,
+        0.18614943325519562,
+        0.18220946192741394
+      ],
+      "top_5_relevances": [
+        0,
+        2,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "query_id": "q035",
+      "text": "A quiet residential street with houses and parked cars",
+      "type": "hard_negative",
+      "target_video": "v11",
+      "metrics": {
+        "ndcg@1": 0.0,
+        "ndcg@5": 0.16812753627111746,
+        "ndcg@10": 0.4110993609507533,
+        "recall@1": 0.0,
+        "recall@5": 0.25,
+        "recall@10": 0.75,
+        "precision@5": 0.2,
+        "map@10": 0.2089285714285714,
+        "mrr": 0.25
+      },
+      "top_5_videos": [
+        "v18",
+        "v11",
+        "v17",
+        "v12",
+        "v06"
+      ],
+      "top_5_similarities": [
+        0.21714460849761963,
+        0.20915797352790833,
+        0.20194119215011597,
+        0.1961248219013214,
+        0.19402644038200378
+      ],
+      "top_5_relevances": [
+        0,
+        0,
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "query_id": "q036",
+      "text": "Cars and buses moving through a busy city street intersection",
+      "type": "exact",
+      "target_video": "v12",
+      "metrics": {
+        "ndcg@1": 0.0,
+        "ndcg@5": 0.41493919716010286,
+        "ndcg@10": 0.5661009751243914,
+        "recall@1": 0.0,
+        "recall@5": 0.25,
+        "recall@10": 0.75,
+        "precision@5": 0.2,
+        "map@10": 0.31547619047619047,
+        "mrr": 0.5
+      },
+      "top_5_videos": [
+        "v18",
+        "v12",
+        "v11",
+        "v17",
+        "v06"
+      ],
+      "top_5_similarities": [
+        0.2409094274044037,
+        0.23173338174819946,
+        0.21010059118270874,
+        0.2057841569185257,
+        0.19803035259246826
+      ],
+      "top_5_relevances": [
+        0,
+        2,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "query_id": "q037",
+      "text": "A busy scene in a modern city",
+      "type": "partial",
+      "target_video": "v12",
+      "metrics": {
+        "ndcg@1": 0.0,
+        "ndcg@5": 0.41363780175807613,
+        "ndcg@10": 0.47700688855979423,
+        "recall@1": 0.0,
+        "recall@5": 0.5,
+        "recall@10": 0.75,
+        "precision@5": 0.4,
+        "map@10": 0.25833333333333336,
+        "mrr": 0.3333333333333333
+      },
+      "top_5_videos": [
+        "v18",
+        "v11",
+        "v12",
+        "v17",
+        "v14"
+      ],
+      "top_5_similarities": [
+        0.23794442415237427,
+        0.22411732375621796,
+        0.22200694680213928,
+        0.21931961178779602,
+        0.20965272188186646
+      ],
+      "top_5_relevances": [
+        0,
+        0,
+        2,
+        0,
+        1
+      ]
+    },
+    {
+      "query_id": "q038",
+      "text": "A calm lake reflecting mountains in the distance",
+      "type": "hard_negative",
+      "target_video": "v12",
+      "metrics": {
+        "ndcg@1": 0.0,
+        "ndcg@5": 0.44149241373678083,
+        "ndcg@10": 0.44149241373678083,
+        "recall@1": 0.0,
+        "recall@5": 0.5,
+        "recall@10": 0.5,
+        "precision@5": 0.4,
+        "map@10": 0.29166666666666663,
+        "mrr": 0.5
+      },
+      "top_5_videos": [
+        "v18",
+        "v11",
+        "v10",
+        "v14",
+        "v17"
+      ],
+      "top_5_similarities": [
+        0.21911758184432983,
+        0.20067119598388672,
+        0.1837676763534546,
+        0.17991088330745697,
+        0.1726430505514145
+      ],
+      "top_5_relevances": [
+        0,
+        1,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "query_id": "q039",
+      "text": "Pedestrians walking on a crowded city sidewalk near shops",
+      "type": "exact",
+      "target_video": "v13",
+      "metrics": {
+        "ndcg@1": 0.0,
+        "ndcg@5": 0.20402386670186018,
+        "ndcg@10": 0.4114934652819116,
+        "recall@1": 0.0,
+        "recall@5": 0.5,
+        "recall@10": 0.75,
+        "precision@5": 0.4,
+        "map@10": 0.3020833333333333,
+        "mrr": 0.3333333333333333
+      },
+      "top_5_videos": [
+        "v18",
+        "v11",
+        "v12",
+        "v14",
+        "v17"
+      ],
+      "top_5_similarities": [
+        0.21520419418811798,
+        0.2129398137331009,
+        0.19282767176628113,
+        0.18961697816848755,
+        0.18491454422473907
+      ],
+      "top_5_relevances": [
+        0,
+        0,
+        1,
+        1,
+        0
+      ]
+    },
+    {
+      "query_id": "q040",
+      "text": "A busy scene in a modern city",
+      "type": "partial",
+      "target_video": "v13",
+      "metrics": {
+        "ndcg@1": 0.0,
+        "ndcg@5": 0.19441677923204098,
+        "ndcg@10": 0.38452403963719534,
+        "recall@1": 0.0,
+        "recall@5": 0.5,
+        "recall@10": 0.75,
+        "precision@5": 0.4,
+        "map@10": 0.25833333333333336,
+        "mrr": 0.3333333333333333
+      },
+      "top_5_videos": [
+        "v18",
+        "v11",
+        "v12",
+        "v17",
+        "v14"
+      ],
+      "top_5_similarities": [
+        0.23794442415237427,
+        0.22411732375621796,
+        0.22200694680213928,
+        0.21931961178779602,
+        0.20965272188186646
+      ],
+      "top_5_relevances": [
+        0,
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "query_id": "q041",
+      "text": "A calm lake reflecting mountains in the distance",
+      "type": "hard_negative",
+      "target_video": "v13",
+      "metrics": {
+        "ndcg@1": 0.0,
+        "ndcg@5": 0.44149241373678083,
+        "ndcg@10": 0.44149241373678083,
+        "recall@1": 0.0,
+        "recall@5": 0.5,
+        "recall@10": 0.5,
+        "precision@5": 0.4,
+        "map@10": 0.29166666666666663,
+        "mrr": 0.5
+      },
+      "top_5_videos": [
+        "v18",
+        "v11",
+        "v10",
+        "v14",
+        "v17"
+      ],
+      "top_5_similarities": [
+        0.21911758184432983,
+        0.20067119598388672,
+        0.1837676763534546,
+        0.17991088330745697,
+        0.1726430505514145
+      ],
+      "top_5_relevances": [
+        0,
+        1,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "query_id": "q042",
+      "text": "A construction site with cranes and scaffolding on a building",
+      "type": "exact",
+      "target_video": "v14",
+      "metrics": {
+        "ndcg@1": 1.0,
+        "ndcg@5": 0.7520764230169481,
+        "ndcg@10": 0.8301645268058915,
+        "recall@1": 0.25,
+        "recall@5": 0.5,
+        "recall@10": 0.75,
+        "precision@5": 0.4,
+        "map@10": 0.5,
+        "mrr": 1.0
+      },
+      "top_5_videos": [
+        "v14",
+        "v18",
+        "v11",
+        "v12",
+        "v17"
+      ],
+      "top_5_similarities": [
+        0.25510451197624207,
+        0.23943044245243073,
+        0.21785590052604675,
+        0.1866668164730072,
+        0.18244874477386475
+      ],
+      "top_5_relevances": [
+        2,
+        0,
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "query_id": "q043",
+      "text": "A busy scene in a modern city",
+      "type": "partial",
+      "target_video": "v14",
+      "metrics": {
+        "ndcg@1": 0.0,
+        "ndcg@5": 0.36402931517008774,
+        "ndcg@10": 0.4273984019718059,
+        "recall@1": 0.0,
+        "recall@5": 0.5,
+        "recall@10": 0.75,
+        "precision@5": 0.4,
+        "map@10": 0.25833333333333336,
+        "mrr": 0.3333333333333333
+      },
+      "top_5_videos": [
+        "v18",
+        "v11",
+        "v12",
+        "v17",
+        "v14"
+      ],
+      "top_5_similarities": [
+        0.23794442415237427,
+        0.22411732375621796,
+        0.22200694680213928,
+        0.21931961178779602,
+        0.20965272188186646
+      ],
+      "top_5_relevances": [
+        0,
+        0,
+        1,
+        0,
+        2
+      ]
+    },
+    {
+      "query_id": "q044",
+      "text": "A calm lake reflecting mountains in the distance",
+      "type": "hard_negative",
+      "target_video": "v14",
+      "metrics": {
+        "ndcg@1": 0.0,
+        "ndcg@5": 0.44149241373678083,
+        "ndcg@10": 0.44149241373678083,
+        "recall@1": 0.0,
+        "recall@5": 0.5,
+        "recall@10": 0.5,
+        "precision@5": 0.4,
+        "map@10": 0.29166666666666663,
+        "mrr": 0.5
+      },
+      "top_5_videos": [
+        "v18",
+        "v11",
+        "v10",
+        "v14",
+        "v17"
+      ],
+      "top_5_similarities": [
+        0.21911758184432983,
+        0.20067119598388672,
+        0.1837676763534546,
+        0.17991088330745697,
+        0.1726430505514145
+      ],
+      "top_5_relevances": [
+        0,
+        1,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "query_id": "q045",
+      "text": "A city skyline with tall buildings seen from a distance at dusk",
+      "type": "exact",
+      "target_video": "v15",
+      "metrics": {
+        "ndcg@1": 0.0,
+        "ndcg@5": 0.19441677923204098,
+        "ndcg@10": 0.19441677923204098,
+        "recall@1": 0.0,
+        "recall@5": 0.5,
+        "recall@10": 0.5,
+        "precision@5": 0.4,
+        "map@10": 0.18333333333333335,
+        "mrr": 0.3333333333333333
+      },
+      "top_5_videos": [
+        "v11",
+        "v18",
+        "v14",
+        "v17",
+        "v12"
+      ],
+      "top_5_similarities": [
+        0.22048237919807434,
+        0.21822617948055267,
+        0.19620831310749054,
+        0.19371114671230316,
+        0.17791830003261566
+      ],
+      "top_5_relevances": [
+        0,
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "query_id": "q046",
+      "text": "A busy scene in a modern city",
+      "type": "partial",
+      "target_video": "v15",
+      "metrics": {
+        "ndcg@1": 0.0,
+        "ndcg@5": 0.19441677923204098,
+        "ndcg@10": 0.25778586603375914,
+        "recall@1": 0.0,
+        "recall@5": 0.5,
+        "recall@10": 0.75,
+        "precision@5": 0.4,
+        "map@10": 0.25833333333333336,
+        "mrr": 0.3333333333333333
+      },
+      "top_5_videos": [
+        "v18",
+        "v11",
+        "v12",
+        "v17",
+        "v14"
+      ],
+      "top_5_similarities": [
+        0.23794442415237427,
+        0.22411732375621796,
+        0.22200694680213928,
+        0.21931961178779602,
+        0.20965272188186646
+      ],
+      "top_5_relevances": [
+        0,
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "query_id": "q047",
+      "text": "A calm lake reflecting mountains in the distance",
+      "type": "hard_negative",
+      "target_video": "v15",
+      "metrics": {
+        "ndcg@1": 0.0,
+        "ndcg@5": 0.44149241373678083,
+        "ndcg@10": 0.44149241373678083,
+        "recall@1": 0.0,
+        "recall@5": 0.5,
+        "recall@10": 0.5,
+        "precision@5": 0.4,
+        "map@10": 0.29166666666666663,
+        "mrr": 0.5
+      },
+      "top_5_videos": [
+        "v18",
+        "v11",
+        "v10",
+        "v14",
+        "v17"
+      ],
+      "top_5_similarities": [
+        0.21911758184432983,
+        0.20067119598388672,
+        0.1837676763534546,
+        0.17991088330745697,
+        0.1726430505514145
+      ],
+      "top_5_relevances": [
+        0,
+        1,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "query_id": "q048",
+      "text": "Hands typing rapidly on a laptop keyboard at a desk",
+      "type": "exact",
+      "target_video": "v16",
+      "metrics": {
+        "ndcg@1": 0.3333333333333333,
+        "ndcg@5": 0.35753408824606947,
+        "ndcg@10": 0.42669062110608663,
+        "recall@1": 0.25,
+        "recall@5": 0.5,
+        "recall@10": 0.75,
+        "precision@5": 0.4,
+        "map@10": 0.59375,
+        "mrr": 1.0
+      },
+      "top_5_videos": [
+        "v17",
+        "v18",
+        "v11",
+        "v12",
+        "v06"
+      ],
+      "top_5_similarities": [
+        0.22381281852722168,
+        0.2139625996351242,
+        0.20955343544483185,
+        0.20301881432533264,
+        0.18736532330513
+      ],
+      "top_5_relevances": [
+        1,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "query_id": "q049",
+      "text": "Someone working with electronic equipment or computers",
+      "type": "partial",
+      "target_video": "v16",
+      "metrics": {
+        "ndcg@1": 0.3333333333333333,
+        "ndcg@5": 0.35753408824606947,
+        "ndcg@10": 0.4306077624214145,
+        "recall@1": 0.25,
+        "recall@5": 0.5,
+        "recall@10": 0.75,
+        "precision@5": 0.4,
+        "map@10": 0.6071428571428571,
+        "mrr": 1.0
+      },
+      "top_5_videos": [
+        "v17",
+        "v18",
+        "v12",
+        "v11",
+        "v14"
+      ],
+      "top_5_similarities": [
+        0.2588594853878021,
+        0.24313884973526,
+        0.21828413009643555,
+        0.2032778263092041,
+        0.20235037803649902
+      ],
+      "top_5_relevances": [
+        1,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "query_id": "q050",
+      "text": "A baker using a mixer to blend ingredients in a bowl",
+      "type": "hard_negative",
+      "target_video": "v16",
+      "metrics": {
+        "ndcg@1": 0.0,
+        "ndcg@5": 0.19519002499605084,
+        "ndcg@10": 0.5772180291864623,
+        "recall@1": 0.0,
+        "recall@5": 0.25,
+        "recall@10": 1.0,
+        "precision@5": 0.2,
+        "map@10": 0.3738095238095238,
+        "mrr": 0.3333333333333333
+      },
+      "top_5_videos": [
+        "v17",
+        "v18",
+        "v06",
+        "v11",
+        "v12"
+      ],
+      "top_5_similarities": [
+        0.22039125859737396,
+        0.20998749136924744,
+        0.203947514295578,
+        0.19376930594444275,
+        0.1927323043346405
+      ],
+      "top_5_relevances": [
+        0,
+        0,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "query_id": "q051",
+      "text": "A person soldering electronic components onto a circuit board",
+      "type": "exact",
+      "target_video": "v17",
+      "metrics": {
+        "ndcg@1": 1.0,
+        "ndcg@5": 0.7959761332981399,
+        "ndcg@10": 0.7959761332981399,
+        "recall@1": 0.25,
+        "recall@5": 0.5,
+        "recall@10": 0.5,
+        "precision@5": 0.4,
+        "map@10": 0.5,
+        "mrr": 1.0
+      },
+      "top_5_videos": [
+        "v17",
+        "v18",
+        "v12",
+        "v11",
+        "v14"
+      ],
+      "top_5_similarities": [
+        0.2597457766532898,
+        0.24166254699230194,
+        0.2009524554014206,
+        0.19906148314476013,
+        0.19336478412151337
+      ],
+      "top_5_relevances": [
+        2,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "query_id": "q052",
+      "text": "Someone working with electronic equipment or computers",
+      "type": "partial",
+      "target_video": "v17",
+      "metrics": {
+        "ndcg@1": 1.0,
+        "ndcg@5": 0.7959761332981399,
+        "ndcg@10": 0.8690498074734849,
+        "recall@1": 0.25,
+        "recall@5": 0.5,
+        "recall@10": 0.75,
+        "precision@5": 0.4,
+        "map@10": 0.6071428571428571,
+        "mrr": 1.0
+      },
+      "top_5_videos": [
+        "v17",
+        "v18",
+        "v12",
+        "v11",
+        "v14"
+      ],
+      "top_5_similarities": [
+        0.2588594853878021,
+        0.24313884973526,
+        0.21828413009643555,
+        0.2032778263092041,
+        0.20235037803649902
+      ],
+      "top_5_relevances": [
+        2,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "query_id": "q053",
+      "text": "A baker using a mixer to blend ingredients in a bowl",
+      "type": "hard_negative",
+      "target_video": "v17",
+      "metrics": {
+        "ndcg@1": 0.0,
+        "ndcg@5": 0.19519002499605084,
+        "ndcg@10": 0.5772180291864623,
+        "recall@1": 0.0,
+        "recall@5": 0.25,
+        "recall@10": 1.0,
+        "precision@5": 0.2,
+        "map@10": 0.3738095238095238,
+        "mrr": 0.3333333333333333
+      },
+      "top_5_videos": [
+        "v17",
+        "v18",
+        "v06",
+        "v11",
+        "v12"
+      ],
+      "top_5_similarities": [
+        0.22039125859737396,
+        0.20998749136924744,
+        0.203947514295578,
+        0.19376930594444275,
+        0.1927323043346405
+      ],
+      "top_5_relevances": [
+        0,
+        0,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "query_id": "q054",
+      "text": "A 3D printer extruding filament to create a plastic object",
+      "type": "exact",
+      "target_video": "v18",
+      "metrics": {
+        "ndcg@1": 1.0,
+        "ndcg@5": 0.7959761332981399,
+        "ndcg@10": 0.8690498074734849,
+        "recall@1": 0.25,
+        "recall@5": 0.5,
+        "recall@10": 0.75,
+        "precision@5": 0.4,
+        "map@10": 0.6071428571428571,
+        "mrr": 1.0
+      },
+      "top_5_videos": [
+        "v18",
+        "v17",
+        "v11",
+        "v12",
+        "v06"
+      ],
+      "top_5_similarities": [
+        0.2755739688873291,
+        0.2414640188217163,
+        0.19938915967941284,
+        0.1973653882741928,
+        0.18758150935173035
+      ],
+      "top_5_relevances": [
+        2,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "query_id": "q055",
+      "text": "Someone working with electronic equipment or computers",
+      "type": "partial",
+      "target_video": "v18",
+      "metrics": {
+        "ndcg@1": 0.3333333333333333,
+        "ndcg@5": 0.634160219686138,
+        "ndcg@10": 0.7072338938614832,
+        "recall@1": 0.25,
+        "recall@5": 0.5,
+        "recall@10": 0.75,
+        "precision@5": 0.4,
+        "map@10": 0.6071428571428571,
+        "mrr": 1.0
+      },
+      "top_5_videos": [
+        "v17",
+        "v18",
+        "v12",
+        "v11",
+        "v14"
+      ],
+      "top_5_similarities": [
+        0.2588594853878021,
+        0.24313884973526,
+        0.21828413009643555,
+        0.2032778263092041,
+        0.20235037803649902
+      ],
+      "top_5_relevances": [
+        1,
+        2,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "query_id": "q056",
+      "text": "A baker using a mixer to blend ingredients in a bowl",
+      "type": "hard_negative",
+      "target_video": "v18",
+      "metrics": {
+        "ndcg@1": 0.0,
+        "ndcg@5": 0.19519002499605084,
+        "ndcg@10": 0.5772180291864623,
+        "recall@1": 0.0,
+        "recall@5": 0.25,
+        "recall@10": 1.0,
+        "precision@5": 0.2,
+        "map@10": 0.3738095238095238,
+        "mrr": 0.3333333333333333
+      },
+      "top_5_videos": [
+        "v17",
+        "v18",
+        "v06",
+        "v11",
+        "v12"
+      ],
+      "top_5_similarities": [
+        0.22039125859737396,
+        0.20998749136924744,
+        0.203947514295578,
+        0.19376930594444275,
+        0.1927323043346405
+      ],
+      "top_5_relevances": [
+        0,
+        0,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "query_id": "q057",
+      "text": "A small robot moving and responding on a tabletop",
+      "type": "exact",
+      "target_video": "v19",
+      "metrics": {
+        "ndcg@1": 0.3333333333333333,
+        "ndcg@5": 0.6119528921531397,
+        "ndcg@10": 0.6119528921531397,
+        "recall@1": 0.25,
+        "recall@5": 0.75,
+        "recall@10": 0.75,
+        "precision@5": 0.6,
+        "map@10": 0.65,
+        "mrr": 1.0
+      },
+      "top_5_videos": [
+        "v18",
+        "v17",
+        "v12",
+        "v11",
+        "v19"
+      ],
+      "top_5_similarities": [
+        0.23955340683460236,
+        0.22502854466438293,
+        0.21442477405071259,
+        0.20166544616222382,
+        0.1929892897605896
+      ],
+      "top_5_relevances": [
+        1,
+        1,
+        0,
+        0,
+        2
+      ]
+    },
+    {
+      "query_id": "q058",
+      "text": "Someone working with electronic equipment or computers",
+      "type": "partial",
+      "target_video": "v19",
+      "metrics": {
+        "ndcg@1": 0.3333333333333333,
+        "ndcg@5": 0.35753408824606947,
+        "ndcg@10": 0.5767551107721047,
+        "recall@1": 0.25,
+        "recall@5": 0.5,
+        "recall@10": 0.75,
+        "precision@5": 0.4,
+        "map@10": 0.6071428571428571,
+        "mrr": 1.0
+      },
+      "top_5_videos": [
+        "v17",
+        "v18",
+        "v12",
+        "v11",
+        "v14"
+      ],
+      "top_5_similarities": [
+        0.2588594853878021,
+        0.24313884973526,
+        0.21828413009643555,
+        0.2032778263092041,
+        0.20235037803649902
+      ],
+      "top_5_relevances": [
+        1,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "query_id": "q059",
+      "text": "A baker using a mixer to blend ingredients in a bowl",
+      "type": "hard_negative",
+      "target_video": "v19",
+      "metrics": {
+        "ndcg@1": 0.0,
+        "ndcg@5": 0.19519002499605084,
+        "ndcg@10": 0.5772180291864623,
+        "recall@1": 0.0,
+        "recall@5": 0.25,
+        "recall@10": 1.0,
+        "precision@5": 0.2,
+        "map@10": 0.3738095238095238,
+        "mrr": 0.3333333333333333
+      },
+      "top_5_videos": [
+        "v17",
+        "v18",
+        "v06",
+        "v11",
+        "v12"
+      ],
+      "top_5_similarities": [
+        0.22039125859737396,
+        0.20998749136924744,
+        0.203947514295578,
+        0.19376930594444275,
+        0.1927323043346405
+      ],
+      "top_5_relevances": [
+        0,
+        0,
+        1,
+        0,
+        0
+      ]
+    }
+  ],
+  "latency": {
+    "video_embed_ms": {
+      "median": 191.76560349296778,
+      "p95": 329.8362710280355,
+      "mean": 271.44745198311284,
+      "total": 5428.949039662257
+    },
+    "text_embed_ms": {
+      "median": 46.22537561226636,
+      "p95": 161.14447447471318,
+      "mean": 62.20991252145419
+    }
+  },
+  "model_info": {
+    "name": "xclip_base",
+    "display_name": "X-CLIP Base (temporal)",
+    "dimensions": 512,
+    "is_api": false,
+    "vector_bytes": 2048,
+    "videos_embedded": 20,
+    "queries_embedded": 60
+  },
+  "errors": []
+}
