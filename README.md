@@ -4,37 +4,37 @@ A head-to-head comparison of multimodal embedding models for text-to-video retri
 
 ## Results (6 of 7 models — Nova pending)
 
-| Model | Dims | NDCG@5 | NDCG@10 | R@1 | R@5 | MRR | mAP@10 | Latency (ms) | Vec Size |
-|-------|------|--------|---------|-----|-----|-----|--------|-------------|----------|
-| **Gemini Embedding 2** | 3072 | 0.697 | **0.769** | 0.200 | 0.717 | 0.896 | 0.712 | 2458 | 12,288 B |
-| **Twelve Labs Marengo 2.7**\* | 1024 | **0.721** | 0.760 | **0.250** | **0.743** | **1.000** | **0.737** | 18148 | 4,096 B |
-| **Mixedbread Wholembed v3**\*\* | ColBERT | 0.644 | 0.757 | 0.216 | 0.649 | 0.932 | 0.688 | 500 | N/A |
-| X-CLIP Base (temporal) | 512 | 0.327 | 0.470 | 0.067 | 0.367 | 0.520 | 0.338 | 192 | 2,048 B |
-| SigLIP 2 SO400M (frame-avg) | 1152 | 0.202 | 0.325 | 0.075 | 0.237 | 0.466 | 0.204 | 636 | 4,608 B |
-| InternVideo2-Stage2 6B | 768 | 0.186 | 0.302 | 0.046 | 0.237 | 0.405 | 0.170 | 24817 | 3,072 B |
+| Model                         | Dims    | NDCG@5    | NDCG@10   | R@1       | R@5       | MRR       | mAP@10    | Latency (ms) | Vec Size |
+|-------------------------------|---------|-----------|-----------|-----------|-----------|-----------|-----------|--------------|----------|
+| **Gemini Embedding 2**        | 3072    | **0.680** | **0.763** | 0.200     | **0.700** | 0.897     | **0.702** | 2142         | 12,288 B |
+| **Twelve Labs Marengo 3.0**   | 1024    | 0.621     | 0.723     | 0.212     | 0.637     | 0.911     | 0.637     | 13808        | 4,096 B  |
+| **Mixedbread Wholembed v3**\* | ColBERT | 0.644     | 0.757     | **0.216** | 0.649     | **0.932** | 0.688     | 500          | N/A      |
+| X-CLIP Base (temporal)        | 512     | 0.327     | 0.470     | 0.067     | 0.367     | 0.520     | 0.338     | 192          | 2,048 B  |
+| SigLIP 2 SO400M (frame-avg)   | 1152    | 0.202     | 0.325     | 0.075     | 0.237     | 0.466     | 0.204     | 636          | 4,608 B  |
+| InternVideo2-Stage2 6B        | 768     | 0.186     | 0.302     | 0.046     | 0.237     | 0.405     | 0.170     | 24817        | 3,072 B  |
 
-\* *Marengo results based on 34/60 queries (56%) due to Twelve Labs free-tier daily rate limit (50 req/day). Full results pending re-run.*
-\*\* *Mixedbread results based on 37/60 queries (62%) due to rate limiting. Uses Stores API (ColBERT-style late interaction) — no single embedding vector.*
+\* *Mixedbread results based on 37/60 queries (62%) due to rate limiting. Uses Stores API (ColBERT-style late interaction) — no single embedding vector.*
 
 **Key takeaways:**
-- The top 3 are all API models — Gemini, Marengo, and Mixedbread cluster tightly at NDCG@10 0.757–0.769
-- Marengo's perfect MRR means the correct video was *always* ranked #1 across all 34 evaluated queries — remarkable for a video-specialist model
-- Mixedbread Wholembed v3 is a strong third at NDCG@10=0.757 with perfect MRR on hard negatives (1.000) — its ColBERT-style late interaction works well for video
-- All three API models are 2x+ better than the best open-source option (X-CLIP at 0.470 NDCG@10)
+- Gemini and Mixedbread sit at the top on NDCG@10 (0.763 and 0.757); Marengo 3.0 trails at 0.723
+- Gemini leads the ranking-quality metrics across the board (NDCG@5, NDCG@10, R@5, mAP@10) on a full 60-query run
+- Mixedbread edges ahead on R@1 (0.216) and MRR (0.932), but on a smaller 37-query sample — worth re-running before trusting the margin
+- Marengo 3.0 is competitive on MRR (0.911) but noticeably behind on NDCG and Recall
+- All three API models are 1.5–2x better than the best open-source option (X-CLIP at 0.470 NDCG@10)
 - X-CLIP is the best open-source model despite being the smallest (512d) — temporal cross-frame attention matters more than model size
 - InternVideo2 6B underperforms despite being 12x larger than X-CLIP — its Stage2 checkpoint is optimized for multimodal pretraining, not zero-shot retrieval
 - Frame-averaging (SigLIP) is a poor proxy for video understanding — temporal structure matters
-- Latency varies wildly: X-CLIP at 192ms (local GPU) vs Marengo at 18s (API processing). Mixedbread query latency is 500ms but requires upfront video upload
+- Latency varies wildly: X-CLIP at 192ms (local GPU) vs Marengo at 14s (API, includes async task polling). Mixedbread query latency is 500ms but requires upfront video upload
 - Mixedbread's Stores-based approach is architecturally different — you upload videos once and search via API, no embedding vectors to manage
 
-**Pending:** Amazon Nova Multimodal (need Bedrock model access). Marengo re-run for remaining 26 queries after rate limit reset.
+**Pending:** Amazon Nova Multimodal (need Bedrock model access). Mixedbread re-run to close the 37/60 gap.
 
 ## Models Under Test
 
 | # | Model | Provider | Dims | Video Native | Type | Status |
 |---|-------|----------|------|-------------|------|--------|
 | 1 | **Gemini Embedding 2** | Google | 768–3072 (Matryoshka) | Yes | API | Done |
-| 2 | **Twelve Labs Marengo 2.7** | Twelve Labs | 1024 | Yes | API | Partial (34/60 queries) |
+| 2 | **Twelve Labs Marengo 3.0** | Twelve Labs | 1024 | Yes | API | Done |
 | 3 | **Mixedbread Wholembed v3** | Mixedbread | ColBERT (late interaction) | Yes | API (Stores) | Partial (37/60 queries) |
 | 4 | **X-CLIP Base** | Microsoft | 512 | Yes (cross-frame attn) | Open-source | Done |
 | 5 | **Amazon Nova Multimodal** | Amazon (Bedrock) | 256–3072 (Matryoshka) | Yes | API | Pending (need Bedrock) |
@@ -140,28 +140,36 @@ Results are written to `results/` as JSON + `results/COMPARISON.md`.
 
 | Model | NDCG@1 | NDCG@5 | R@1 | R@5 | MRR |
 |-------|--------|--------|-----|-----|-----|
-| Marengo 2.7\* | 0.556 | 0.662 | 0.250 | 0.667 | 1.000 |
-| Gemini Embedding 2 | 0.600 | 0.652 | 0.200 | 0.600 | 0.887 |
-| Mixedbread Wholembed v3\*\* | 0.564 | 0.630 | 0.231 | 0.615 | 0.962 |
+| 12 Labs Marengo 3.0 | 0.650 | 0.655 | 0.237 | 0.613 | 0.967 |
+| Gemini Embedding 2 | 0.600 | 0.646 | 0.200 | 0.600 | 0.892 |
+| Mixedbread Wholembed v3\* | 0.564 | 0.630 | 0.231 | 0.615 | 0.962 |
 | X-CLIP Base | 0.267 | 0.378 | 0.100 | 0.400 | 0.606 |
 | SigLIP 2 (frame-avg) | 0.133 | 0.160 | 0.075 | 0.212 | 0.435 |
 | InternVideo2 6B | 0.050 | 0.176 | 0.037 | 0.263 | 0.396 |
+
+### Partial Match (category-level query)
+
+Marengo 3.0 and Gemini only — refreshed from the latest full 60-query run. Re-run `python compare.py` to regenerate.
+
+| Model | NDCG@1 | NDCG@5 | R@1 | R@5 | MRR |
+|-------|--------|--------|-----|-----|-----|
+| 12 Labs Marengo 3.0 | 0.400 | 0.597 | 0.200 | 0.700 | 0.900 |
+| Gemini Embedding 2 | 0.400 | 0.644 | 0.200 | 0.750 | 0.900 |
 
 ### Hard Negative (adjacent domain — model should NOT be confused)
 
 | Model | NDCG@1 | NDCG@5 | R@5 | MRR |
 |-------|--------|--------|-----|-----|
-| Marengo 2.7\* | 1.000 | 0.846 | 0.841 | 1.000 |
-| Mixedbread Wholembed v3\*\* | 1.000 | 0.802 | 0.750 | 1.000 |
-| Gemini Embedding 2 | 0.800 | 0.790 | 0.800 | 0.900 |
+| 12 Labs Marengo 3.0 | 0.800 | 0.612 | 0.600 | 0.867 |
+| Mixedbread Wholembed v3\* | 1.000 | 0.802 | 0.750 | 1.000 |
+| Gemini Embedding 2 | 0.800 | 0.749 | 0.750 | 0.900 |
 | X-CLIP Base | 0.200 | 0.322 | 0.350 | 0.467 |
 | SigLIP 2 (frame-avg) | 0.400 | 0.236 | 0.200 | 0.556 |
 | InternVideo2 6B | 0.200 | 0.220 | 0.250 | 0.423 |
 
-Marengo and Mixedbread both achieve perfect NDCG@1 and MRR on hard negatives — never fooled by adjacent-domain queries. Gemini is close behind at 0.900 MRR.
+Marengo 3.0 and Gemini tie on NDCG@1 for hard negatives (0.800) — neither is consistently fooled by adjacent-domain queries. Mixedbread shows perfect NDCG@1/MRR on its partial run, but on a smaller sample.
 
-\* *Marengo: partial results — 34/60 queries evaluated.*
-\*\* *Mixedbread: partial results — 37/60 queries evaluated. Uses Stores-based retrieval (ColBERT-style).*
+\* *Mixedbread: partial results — 37/60 queries evaluated. Uses Stores-based retrieval (ColBERT-style).*
 
 ## Cost Comparison
 

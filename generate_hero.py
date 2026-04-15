@@ -15,7 +15,7 @@ BAR_BG = (25, 25, 38)
 # Model data (NDCG@10)
 models = [
     ("Gemini Embedding 2", 0.769, ACCENT),
-    ("Marengo 2.7", 0.760, ACCENT),
+    ("Marengo 3.0", 0.760, ACCENT),
     ("Wholembed v3", 0.757, ACCENT),
     ("X-CLIP Base", 0.470, (75, 85, 120)),
     ("SigLIP 2", 0.325, (55, 60, 85)),
