@@ -1,13 +1,13 @@
 # Video Embedding Benchmark — Results
 
-Models evaluated: 5
+Models evaluated: 6
 
 ## Overall Retrieval Performance
 
 | Model                       |   Dims |   NDCG@5 |   NDCG@10 |   R@1 |   R@5 |   MRR |   mAP@10 |   Latency (ms) | Vec Size   |
 |-----------------------------|--------|----------|-----------|-------|-------|-------|----------|----------------|------------|
-| Gemini Embedding 2          |   3072 |    0.697 |     0.769 | 0.2   | 0.717 | 0.896 |    0.712 |           2458 | 12,288 B   |
-| Twelve Labs Marengo 2.7     |   1024 |    0.721 |     0.76  | 0.25  | 0.743 | 1     |    0.737 |          18148 | 4,096 B    |
+| Gemini Embedding 2          |   3072 |    0.68  |     0.763 | 0.2   | 0.7   | 0.897 |    0.702 |           2142 | 12,288 B   |
+| Twelve Labs Marengo 3.0     |   1024 |    0.621 |     0.723 | 0.212 | 0.637 | 0.911 |    0.637 |          13808 | 4,096 B    |
 | X-CLIP Base (temporal)      |    512 |    0.327 |     0.47  | 0.067 | 0.367 | 0.52  |    0.338 |            192 | 2,048 B    |
 | SigLIP 2 SO400M (frame-avg) |   1152 |    0.202 |     0.325 | 0.075 | 0.237 | 0.466 |    0.204 |            636 | 4,608 B    |
 | InternVideo2-Stage2 6B      |    768 |    0.186 |     0.302 | 0.046 | 0.237 | 0.405 |    0.17  |          24817 | 3,072 B    |
@@ -18,7 +18,7 @@ Models evaluated: 5
 | Model                       |   Exact R@1 |   Exact R@5 |
 |-----------------------------|-------------|-------------|
 | Gemini Embedding 2          |       0.2   |       0.6   |
-| Twelve Labs Marengo 2.7     |       0.25  |       0.667 |
+| Twelve Labs Marengo 3.0     |       0.237 |       0.613 |
 | InternVideo2-Stage2 6B      |       0.037 |       0.263 |
 | X-CLIP Base (temporal)      |       0.1   |       0.4   |
 | SigLIP 2 SO400M (frame-avg) |       0.075 |       0.212 |
@@ -28,8 +28,8 @@ Models evaluated: 5
 
 | Model                       | Video Embed (median)   | Video Embed (p95)   | Text Embed (median)   | Type   |
 |-----------------------------|------------------------|---------------------|-----------------------|--------|
-| Gemini Embedding 2          | 2458 ms                | 3410 ms             | 330 ms                | API    |
-| Twelve Labs Marengo 2.7     | 18148 ms               | 36154 ms            | 499 ms                | API    |
+| Gemini Embedding 2          | 2142 ms                | 2581 ms             | 191 ms                | API    |
+| Twelve Labs Marengo 3.0     | 13808 ms               | 14295 ms            | 381 ms                | API    |
 | InternVideo2-Stage2 6B      | 24817 ms               | 27275 ms            | 194 ms                | Local  |
 | X-CLIP Base (temporal)      | 192 ms                 | 330 ms              | 46 ms                 | Local  |
 | SigLIP 2 SO400M (frame-avg) | 636 ms                 | 708 ms              | 31 ms                 | Local  |
@@ -39,6 +39,11 @@ Models evaluated: 5
 
 Queries designed to NOT match a target video. Lower rank = worse (model confused).
 
+- **Gemini Embedding 2**: 5/20 negatives ranked in top 5 (lower is better)
+- **Twelve Labs Marengo 3.0**: 4/20 negatives ranked in top 5 (lower is better)
+- **InternVideo2-Stage2 6B**: 4/20 negatives ranked in top 5 (lower is better)
+- **X-CLIP Base (temporal)**: 4/20 negatives ranked in top 5 (lower is better)
+- **SigLIP 2 SO400M (frame-avg)**: 5/20 negatives ranked in top 5 (lower is better)
 
 
 ---

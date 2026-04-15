@@ -142,9 +142,9 @@ def generate_report(results: dict) -> str:
             continue
         r = results[model_name]
         info = r["model_info"]
-        negatives = [q for q in r["per_query"] if q.get("match_type") == "negative"]
+        negatives = [q for q in r["per_query"] if q.get("type") == "hard_negative"]
         if negatives:
-            bad = [q for q in negatives if q.get("target_rank", 999) <= 5]
+            bad = [q for q in negatives if q["target_video"] in q.get("top_5_videos", [])]
             lines.append(
                 f"- **{info['display_name']}**: {len(bad)}/{len(negatives)} "
                 f"negatives ranked in top 5 (lower is better)"
